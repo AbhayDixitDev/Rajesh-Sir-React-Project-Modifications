@@ -11,10 +11,12 @@ const Womenswear = () => {
 
     const loadData = async () => {
         try {
-            const api = "http://localhost:3000/shopping";
+            const api = "https://react-e-comm-data-live.vercel.app";
             const response = await axios.get(api);
-            // Filter data to only include mens products
-            const mensData = response.data.filter(item => item.category === 'women');
+            setMydata((response.data).shopping);
+
+            // Filter data to only include womens products
+            const mensData = (response.data).shopping.filter(item => item.category === 'women');
             setMydata(mensData);
         } catch (error) {
             console.error("Error loading data:", error);

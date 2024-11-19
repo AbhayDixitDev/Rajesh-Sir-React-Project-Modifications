@@ -17,10 +17,13 @@ const Shop = () => {
 
     const loadData = async () => {
         try {
-            const api = "http://localhost:3000/shopping";
+            const api = "https://react-e-comm-data-live.vercel.app";
             const response = await axios.get(api);
-            setMydata(response.data);
-            setFilteredData(response.data);
+            setMydata((response.data).shopping);
+
+            console.log((response.data).shopping)
+
+            setFilteredData((response.data).shopping);
         } catch (error) {
             console.error("Error loading data:", error);
         }

@@ -8,6 +8,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../cartSlice';
+import "./style.css"
 
 const Home = () => {
     const [mydata, setMydata] = useState([]);
@@ -15,9 +16,9 @@ const Home = () => {
 
     const loadData = async () => {
         try {
-            const api = "http://localhost:3000/shopping";
+            const api = "https://react-e-comm-data-live.vercel.app";
             const response = await axios.get(api);
-            setMydata(response.data);
+            setMydata((response.data).shopping);
         } catch (error) {
             console.error("Error loading data:", error);
         }
@@ -35,41 +36,41 @@ const Home = () => {
         <>
             <Carousel>
                 <Carousel.Item>
-                    <img src={ban1} width="100%" height="200" alt="First slide" />
-                    <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Caption>
+                <img src={ban1} style={{ width: "33%", display: 'inline-block', margin: '0 auto' }} height="200"  />
+                <img src={ban2} style={{ width: "33%", display: 'inline-block', margin: '0 auto' }} height="200"  />
+                <img src={ban3} style={{ width: "33%", display: 'inline-block', margin: '0 auto' }} height="200"  />
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img src={ban2} width="100%" height="200" alt="Second slide" />
-                    <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </Carousel.Caption>
+                <img src={ban2} style={{ width: "33%", display: 'inline-block', margin: '0 auto' }} height="200"  />
+                <img src={ban1} style={{ width: "33%", display: 'inline-block', margin: '0 auto' }} height="200"  />                
+                <img src={ban3} style={{ width: "33%", display: 'inline-block', margin: '0 auto' }} height="200"  />
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img src={ban3} width="100%" height="200" alt="Third slide" />
-                    <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                    </Carousel.Caption>
+                <img src={ban3} style={{ width: "33%", display: 'inline-block', margin: '0 auto' }} height="200"  />
+                <img src={ban2} style={{ width: "33%", display: 'inline-block', margin: '0 auto' }} height="200"  />
+                <img src={ban1} style={{ width: "33%", display: 'inline-block', margin: '0 auto' }} height="200"  />     
                 </Carousel.Item>
             </Carousel>
 
             <h1>New Arrival</h1>
-            <div id="cardData">
+            <div id="cardData" className="card-container" >
                 {mydata.map((item) => (
-                    <Card key={item.id} style={{ width: "380px", marginTop: "10px" }}>
-                        <img src={item.image} style={{ height: "300px" }} alt={item.name} />
+                    <Card key={item.id} className="product-card">
+                        <img src={item.image} className="product-image" alt={item.name} />
                         <Card.Body>
                             <Card.Title>{item.name} for {item.category}</Card.Title>
-                            <Card.Text>
+                            <Card.Text className="card-details">
                                 {item.description}
                                 <br />
-                                <span style={{ color: 'red', fontWeight: 'bold' }}>Price: {item.price}</span>
+                                <span className="product-price">Price: {item.price}</span>
                             </Card.Text>
-                            <Button variant="primary" onClick={() => cartDataAdd(item)}>Add to cart</Button>
+                            <Button
+                                variant="primary"
+                                onClick={() => cartDataAdd(item)}
+                                className="add-to-cart-btn"
+                            >
+                                Add to cart
+                            </Button>
                         </Card.Body>
                     </Card>
                 ))}
