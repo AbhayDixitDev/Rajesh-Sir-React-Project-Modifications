@@ -2,7 +2,7 @@
    "shopping":[
     {
         "id":1,
-        "name":"T-shirt",
+        "name":"Men's Casual T-shirt",
         "price":3450,
         "description":"This is a very good T-shirt for men.",
         "category":"men",
@@ -11,7 +11,7 @@
     },
     {
         "id":2,
-        "name":"T-shirt",
+        "name":"Men's Sports T-shirt",
         "price":2890,
         "description":"This is a very good T-shirt for men.",
         "category":"men",
@@ -20,7 +20,7 @@
     },
     {
         "id":3,
-        "name":"T-shirt",
+        "name":"Men's Formal T-shirt",
         "price":1570,
         "description":"This is a very good T-shirt for men.",
         "category":"men",
@@ -29,7 +29,7 @@
     },
     {
         "id":4,
-        "name":"T-shirt",
+        "name":"Men's Casual T-shirt",
         "price":4120,
         "description":"This is a very good T-shirt for men.",
         "category":"men",
@@ -38,7 +38,7 @@
     },
     {
         "id":5,
-        "name":"T-shirt",
+        "name":"Women's Casual T-shirt",
         "price":2750,
         "description":"This is a very good T-shirt for women.",
         "category":"women",
@@ -47,7 +47,7 @@
     },
     {
         "id":6,
-        "name":"T-shirt",
+        "name":"Women's Sports T-shirt",
         "price":1980,
         "description":"This is a very good T-shirt for women.",
         "category":"women",
@@ -56,7 +56,7 @@
     },
     {
         "id":7,
-        "name":"T-shirt",
+        "name":"Women's Formal T-shirt",
         "price":5230,
         "description":"This is a very good T-shirt for women.",
         "category":"women",
@@ -65,7 +65,7 @@
     },
     {
         "id":8,
-        "name":"T-shirt",
+        "name":"Kids' Casual T-shirt",
         "price":3670,
         "description":"This is a very good T-shirt for kids.",
         "category":"kids",
@@ -74,7 +74,7 @@
     },
     {
         "id":9,
-        "name":"T-shirt",
+        "name":"Kids' Sports T-shirt",
         "price":4500,
         "description":"This is a very good T-shirt for kids.",
         "category":"kids",
@@ -83,7 +83,7 @@
     },
     {
         "id":10,
-        "name":"Cap",
+        "name":"Men's Cap",
         "price":300,
         "description":"Stylish cap for men.",
         "category":"men",
@@ -92,7 +92,7 @@
     },
     {
         "id":11,
-        "name":"Socks",
+        "name":"Women's Socks",
         "price":450,
         "description":"Comfortable socks for women.",
         "category":"women",
@@ -101,7 +101,7 @@
     },
     {
         "id":12,
-        "name":"Hat",
+        "name":"Women's Hat",
         "price":1200,
         "description":"Elegant hat for women.",
         "category":"women",
@@ -110,7 +110,7 @@
     },
     {
         "id":13,
-        "name":"Scarf",
+        "name":"Kids' Scarf",
         "price":800,
         "description":"Warm scarf for kids.",
         "category":"kids",

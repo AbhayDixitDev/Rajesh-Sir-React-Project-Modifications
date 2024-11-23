@@ -1,4 +1,5 @@
 {
+  "homepage": "https://AbhayDixitDev.github.io/Rajesh-Sir-React-Project-Modifications/tree/main/reactProjectRedux",
   "name": "app6pm",
   "private": true,
   "version": "0.0.0",
@@ -6,6 +7,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -14,6 +17,7 @@
     "antd": "^5.22.1",
     "axios": "^1.7.7",
     "bootstrap": "^5.3.3",
+    "gh-pages": "^6.2.0",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.5",
     "react-dom": "^18.3.1",
