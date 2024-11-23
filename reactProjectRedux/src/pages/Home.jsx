@@ -36,19 +36,13 @@ const Home = () => {
         <>
             <Carousel>
                 <Carousel.Item>
-                <img src={ban1} style={{ width: "33%", display: 'inline-block', margin: '0 auto' }} height="200"  />
-                <img src={ban2} style={{ width: "33%", display: 'inline-block', margin: '0 auto' }} height="200"  />
-                <img src={ban3} style={{ width: "33%", display: 'inline-block', margin: '0 auto' }} height="200"  />
+                    <img src={ban1} style={{ width: "100%", display: 'block' }} alt="Banner 1" />
                 </Carousel.Item>
                 <Carousel.Item>
-                <img src={ban2} style={{ width: "33%", display: 'inline-block', margin: '0 auto' }} height="200"  />
-                <img src={ban1} style={{ width: "33%", display: 'inline-block', margin: '0 auto' }} height="200"  />                
-                <img src={ban3} style={{ width: "33%", display: 'inline-block', margin: '0 auto' }} height="200"  />
+                    <img src={ban2} style={{ width: "100%", display: 'block' }} alt="Banner 2" />
                 </Carousel.Item>
                 <Carousel.Item>
-                <img src={ban3} style={{ width: "33%", display: 'inline-block', margin: '0 auto' }} height="200"  />
-                <img src={ban2} style={{ width: "33%", display: 'inline-block', margin: '0 auto' }} height="200"  />
-                <img src={ban1} style={{ width: "33%", display: 'inline-block', margin: '0 auto' }} height="200"  />     
+                    <img src={ban3} style={{ width: "100%", display: 'block' }} alt="Banner 3" />
                 </Carousel.Item>
             </Carousel>
 
