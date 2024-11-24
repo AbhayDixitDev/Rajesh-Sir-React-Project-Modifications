@@ -8,6 +8,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../cartSlice';
+import { Col } from 'react-bootstrap';
 import "./style.css"
 
 const Home = () => {
@@ -49,7 +50,8 @@ const Home = () => {
             <h1>New Arrival</h1>
             <div id="cardData" className="card-container" >
                 {mydata.map((item) => (
-                    <Card key={item.id} className="product-card">
+                    <Col xs={6} sm={4} md={2} lg={2} key={item.id}>
+                        <Card className="product-card mb-2" >
                         <img src={item.image} className="product-image" alt={item.name} />
                         <Card.Body>
                             <Card.Title>{item.name} for {item.category}</Card.Title>
@@ -67,6 +69,7 @@ const Home = () => {
                             </Button>
                         </Card.Body>
                     </Card>
+                    </Col>
                 ))}
             </div>
         </>
